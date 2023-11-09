@@ -205,5 +205,10 @@ Um array é um grupo de variáveis que contém valores todos do mesmo tipo. Os a
 Para referenciar um elemento particular em um array, especificamos o nome da referência para o array e o número de posição do elemento no array. O número de posição do elemento é chamado de índice ou subscrito.
 
 ```java
+int[] exemplo = new int[3]; // instanciação
+exemplo[0] = 21;
+exemplo[1] = 23;
+exemplo[2] = 25;
 
+System.out.println(exemplo[0]); // exibição
 ```
