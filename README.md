@@ -210,5 +210,86 @@ exemplo[0] = 21;
 exemplo[1] = 23;
 exemplo[2] = 25;
 
-System.out.println(exemplo[0]); // exibição
+for (int i = 0; i < exemplo.length; i++){ // exibição com for
+    System.out.println(exemplo[i]); 
+}
+
 ```
+
+### **ARRAYS MULTIDIMENSIONAIS**
+Um array multidimensional nada mais é que arrays de arrays, ou seja, arrays linkados a qual você pode navegar sobre todas as posições que eles tem.
+
+```java
+int[][] dias = new int[3][3];
+dias[0][0] = 31;
+
+System.out.println(dias[0][0]);
+```
+
+Percorra o array baseado nas posições dos indíces, como acima há apenas dois arrays de 3 posições, poderia acessar como na exibição acima.
+
+<hr>
+
+# **PROGRAMAÇÃO ORIENTADA A OBJETOS**
+A POO é um paradigma de programação que utiliza objetos para organizar o código. É eficaz para projetar e desenvolver sistemas complexos, uma vez que permite uma organização mais clara e modular do código, facilitando a manutenção e a expansão do software.
+
+### **CLASSE**
+Uma classe é o mesmo que uma `entidade` (representação de algo real), também pode ser considerado um objeto.
+Classes são representadas por atributos e métodos.
+
+* **Atributos:** uma qualidade que aquela classe tem, são as características do objeto.
+* **Métodos:** alguma coisa que a classe pode fazer, são os comportamentos do objeto.
+```java
+public class Animal{ // Classe
+    
+    //Atributos
+    public String nome;
+    public int idade;
+    public String corPelo;
+    
+    //Métodos
+    public Animal(String nome, int idade, String corPelo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.corPelo = corPelo;
+    }
+    
+    public void andar() {
+        System.out.print("estou andando");
+    }
+    
+    public void comer(){
+        System.out.println("estou comendo");
+    }
+}
+```
+
+### **OBJETO**
+Um objeto é a representação da istância de uma classe, diferentes das classes que criam e instanciam objetos.
+
+```java
+public class AnimalTest {
+    Animal animal1 = new Animal("Cisco", 8, "Listrado");
+}
+```
+
+### **CONSTRUTOR**
+Cada clase declarada tem por padrão um construtor sem parâmetros, porém, você pode fornecer seu próprio construtor a fim de especificar a inicialização personalizada para objetos de sua classe.
+
+```java
+Account account1 = new Account("Jane Green")
+```
+
+Neste caso, o argumento "Jane Green" do tipo String é passado para o construtor do objeto `Account` e é usado para inicializar a variável de instância `nome`. Isso requer que a classe forneça um construtor que recebe apenas um parâmetro do tipo String.
+
+```java
+public class Account{
+    private String name;
+    
+    public Account(String name){
+        this.name = name;
+    }
+}
+```
+
+### **MODIFICADORES DE ACESSO**
