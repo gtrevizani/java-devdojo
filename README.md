@@ -291,5 +291,38 @@ public class Account{
     }
 }
 ```
+Um construtor deve ter o mesmo nome que a classe. Já uma lista de parâmetros de um construtor especifica que ele requer um ou mais dados para executar sua tarefa.
+
+### **GETTERS AND SETTERS**
+
+Na prática da programação, são usados métodos especiais, identificados como getters e setters para retornar e inserir respectivamente valores de atributos encapsulados, evitando o acesso direto a tais atributos.
+
+* O método `set` armazena um nome em um objeto.
+* O método `get` obtém um nome de um objeto.
+
+```java
+public class Account{
+    
+    private String name;
+    
+    // Seta a variável
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    // Retorna a variável
+    public void getName(){
+        return name;
+    }
+}
+```
 
 ### **MODIFICADORES DE ACESSO**
+
+Modificadores de acesso são palavras-chave que determinam a visiblidade de classes, métodos, variáveis e outros membros em um programa. Eles controlam a forma como os membros de uma classe podem ser acessados a partir de outras classes. Existem quatro modificadores de acesso em Java:
+
+* **private (-):** só funciona naquele objeto. Nenhuma outra classe do sistema poderá acessar diretamente o atributo ou método afetado.
+* **protected (#):** só funciona naquele pacote. Podem ser acessados por classes pertencentes ao mesmo pacote.
+* **public (+):** livre. Disponível para qualquer classe que possa visualizar a classe acessada, não pode ser herdada, apenas herdar.
+* **static:** métodos dela só pode ser usada de forma privada.
+* **default:** podem ser acessados por classes pertencentes ao mesmo pacote.
