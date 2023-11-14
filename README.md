@@ -326,3 +326,22 @@ Modificadores de acesso são palavras-chave que determinam a visiblidade de clas
 * **public (+):** livre. Disponível para qualquer classe que possa visualizar a classe acessada, não pode ser herdada, apenas herdar.
 * **static:** métodos dela só pode ser usada de forma privada.
 * **default:** podem ser acessados por classes pertencentes ao mesmo pacote.
+
+### **SOBRECARGA**
+Os métodos com o `mesmo nome` podem ser declarados na mesma classe, contanto que tenham diferentes conjuntos de parâmetros - isso é chamado de sobrecarga de métodos.
+
+```java
+        public void init(String nome, String idade, String CPF){
+            this.nome = nome;
+            this.idade = idade;
+            this.CPF = CPF;
+        }
+        
+        public void init(String nome, String idade, String CNPJ){
+            this.nome = nome;
+            this.idade = idade;
+            this.CNJP = CNPJ;
+        }
+```
+
+Quando um método sobrecarregado é chamado, o compilador Java seleciona o método adequado examinando o número, os tipos e a ordem dos argumentos na chamada. A sobrecarga de métodos é comumente utilizada para criar vários métodos com o `mesmo nome` que realizam as `mesmas tarefas`, ou tarefas semelhantes, mas sobre `tipos diferentes` ou `números diferentes de argumentos`.
