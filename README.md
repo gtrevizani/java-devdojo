@@ -59,13 +59,13 @@ Expressões aritméticas são aquelas expressões que quando calculadas vão dar
 
 <div align="center">
 
-  Operador |  Significado
-  :---------: | :------: 
-  (+) | Adição
-  (-) | Subtração
-  (*) | Multiplicação
-  (/) | Divisão
-  (%) | Resto da divisão (módulo)
+| Operador |        Significado        |
+|:--------:|:-------------------------:|
+|   (+)    |          Adição           |
+|   (-)    |         Subtração         |
+|   (*)    |       Multiplicação       |
+|   (/)    |          Divisão          |
+|   (%)    | Resto da divisão (módulo) |
 
 </div>
 
@@ -74,14 +74,14 @@ São utilizados para comparar valores entre variáveis e expressões do mesmo ti
 
 <div align="center">
 
-  Operador |  Significado
-  :---------: | :------: 
-  (==) | Igual
-  (!=) ou (<>) | Diferente
-  (>) | Maior
-  (<) | Menor
-  (>=) | Maior igual
-  (<=) | Menor igual
+|   Operador   | Significado |
+|:------------:|:-----------:|
+|     (==)     |    Igual    |
+| (!=) ou (<>) |  Diferente  |
+|     (>)      |    Maior    |
+|     (<)      |    Menor    |
+|     (>=)     | Maior igual |
+|     (<=)     | Menor igual |
 
 </div>
 
@@ -91,11 +91,11 @@ Fazem comparações com o objetivo de avaliar expressões em que o resultado pod
 
 <div align="center">
 
-  Operador |  Significado
-  :---------: | :------: 
-  (AND) | As duas condições devem ser verdadeiras para que o resultado seja verdadeiro.
-  (OU) | Pelo menos uma condição deve ser verdadeira para que o resultado seja verdadeiro.
-  (NOT) | Inverte o valor do resultado da condição.
+| Operador |                                    Significado                                    |
+|:--------:|:---------------------------------------------------------------------------------:|
+|  (AND)   |   As duas condições devem ser verdadeiras para que o resultado seja verdadeiro.   |
+|   (OU)   | Pelo menos uma condição deve ser verdadeira para que o resultado seja verdadeiro. |
+|  (NOT)   |                     Inverte o valor do resultado da condição.                     |
 
 </div>
 
@@ -104,16 +104,16 @@ Têm como função retornar um valor atribuído de acordo com a operação indic
 
 <div align="center">
 
-  Operador |  Significado
-  :---------: | :------: 
-  (=) | Atribuição simples
-  (-=) | Atribuição com subtração
-  (/=) | Atribuição com divisão
-  (+=) | Atribuição com adição
-  (*=) | Atribuição com multiplicação
-  (%=) | Atribuição com módulo
-  (--) | Decremento
-  (++) | Incremento
+| Operador |         Significado          |
+|:--------:|:----------------------------:|
+|   (=)    |      Atribuição simples      |
+|   (-=)   |   Atribuição com subtração   |
+|   (/=)   |    Atribuição com divisão    |
+|   (+=)   |    Atribuição com adição     |
+|   (*=)   | Atribuição com multiplicação |
+|   (%=)   |    Atribuição com módulo     |
+|   (--)   |          Decremento          |
+|   (++)   |          Incremento          |
 
 </div>
 
@@ -182,7 +182,7 @@ São comandos que permitem que uma sequência de instruções seja executada vá
             ...
         }
 ```
-* **While:** é a estrutura de repetição mais simples, ideal para situações em que não se sabe o número exato de vezes em um bloco de instruções. Pode ser usado para substituir laços for.
+* **While:** é a estrutura de repetição mais simples, ideal para situações em que não se sabe o número exato de vezes num bloco de instruções. Pode ser usado para substituir laços for.
 ```java
         while (comando) {
             ...
@@ -237,29 +237,59 @@ A POO é um paradigma de programação que utiliza objetos para organizar o cód
 Uma classe é o mesmo que uma `entidade` (representação de algo real), também pode ser considerado um objeto.
 Classes são representadas por atributos e métodos.
 
-* **Atributos:** uma qualidade que aquela classe tem, são as características do objeto.
-* **Métodos:** alguma coisa que a classe pode fazer, são os comportamentos do objeto.
 ```java
-public class Animal{ // Classe
-    
-    //Atributos
+public class Animal{
     public String nome;
     public int idade;
     public String corPelo;
     
-    //Métodos
     public Animal(String nome, int idade, String corPelo) {
         this.nome = nome;
         this.idade = idade;
         this.corPelo = corPelo;
     }
-    
     public void andar() {
         System.out.print("estou andando");
     }
-    
     public void comer(){
         System.out.println("estou comendo");
+    }
+}
+```
+
+### **ATRIBUTOS**
+Uma qualidade que aquela classe tem, são as características do objeto.
+
+```java
+public class Estudante{
+    public String nome;
+    public int idade;
+    public int matricula;
+    public String turma;
+    public char turno;
+}
+```
+
+### **MÉTODOS**
+
+Alguma coisa que a classe pode fazer, são os comportamentos do objeto.
+
+```java
+public class Carro{
+    public String nome;
+    public double velocidade;
+    
+    //Métodos
+    public void descreverCarro(){
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Velocidade: " + this.velocidade);
+    }
+    public void setVelocidade(double velocidade){
+        this.velocidade = velocidade;
+    }
+    
+    public void getVelocidade(){
+        return velocidade;
     }
 }
 ```
@@ -345,3 +375,27 @@ Os métodos com o `mesmo nome` podem ser declarados na mesma classe, contanto qu
 ```
 
 Quando um método sobrecarregado é chamado, o compilador Java seleciona o método adequado examinando o número, os tipos e a ordem dos argumentos na chamada. A sobrecarga de métodos é comumente utilizada para criar vários métodos com o `mesmo nome` que realizam as `mesmas tarefas`, ou tarefas semelhantes, mas sobre `tipos diferentes` ou `números diferentes de argumentos`.
+
+### **BLOCOS DE INICIALIZAÇÃO**
+
+São inicializados antes do construtor.
+
+```java
+public class Anime {
+    private String nome;
+    private int[] episodios;
+
+    {
+        System.out.println("Dentro do bloco de inicialização");
+        episodios = new int[100];
+        for (int i = 0; i < episodios.length; i++) {
+            episodios[i] = i+1;
+        }
+    }
+    
+    public Anime(String nome, int[] episodios){
+        this.nome = nome;
+        this.episodios = episodios;
+    }
+}
+```
