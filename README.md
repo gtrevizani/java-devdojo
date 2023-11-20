@@ -430,3 +430,34 @@ public class Estudante {
     }
 }
 ```
+
+### **HERANÇA**
+
+Herdar atributos e métodos de outras classes. A partir de classes mais genéricas já existentes é possível gerar novas classes mais específicas, que herdam da classes ancestral seus atributos e métodos, além de implementar características mais específicas.
+
+```java
+public class Animal {
+    private String nome;
+    private int idade;
+    
+    public Animal(String nome, int idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+}
+```
+
+```java
+public class Cachorro extends Animal {
+    private String raça;
+    
+    public Cachorro(String nome, int idade, String raça){
+        super(nome, idade);
+        this.raça = raça;
+    }
+    
+    public void andar(){
+        System.out.println("Estou andando...");
+    }
+}
+```
