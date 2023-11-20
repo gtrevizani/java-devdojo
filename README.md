@@ -399,3 +399,34 @@ public class Anime {
     }
 }
 ```
+
+### **ASSOCIAÇÃO**
+Associação é o relacionamento entre dois objetos.
+
+```
+Jogador 1 -- 1 Personagem //  (Um jogador tem um personagem, um personagem tem um jogador)
+Time 1 -- N Jogador       //  (Um time tem muitos jogadores, jogador tem um time)
+Jogador N -- 1 Time       //  (Muitos jogadores tem um time, um time tem muitos jogadores)
+Estudante N -- N Curso    //  (Muitos estudantes tem muitos cursos, muitos cursos tem muitos estudantes)
+```
+
+### **SCANNER**
+Scanner é utilizado quando você quer inserir dados diretamente pelo teclado. O Scanner é chamado para fazer a leitura dessa inserção e então gravar em variável.
+
+```java
+public class Estudante {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite seu nome: ");
+        String nome = entrada.nextLine();
+        System.out.println("Digite sua matricula: ");
+        int matricula = entrada.nextInt();
+        
+        System.out.println(nome);
+        System.out.println(matricula);
+        
+        entrada.close();
+    }
+}
+```
