@@ -461,3 +461,13 @@ public class Cachorro extends Animal {
     }
 }
 ```
+
+### **TO STRING**
+
+O objetivo do método `toString()` é trazer uma representação textual de uma instância de um objeto.
+
+```java
+    public String toString() {
+        return "Anime: " + this.nome;
+    }
+```
