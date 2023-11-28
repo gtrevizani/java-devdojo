@@ -355,6 +355,7 @@ Modificadores de acesso são palavras-chave que determinam a visiblidade de clas
 * **protected (#):** só funciona naquele pacote. Podem ser acessados por classes pertencentes ao mesmo pacote.
 * **public (+):** livre. Disponível para qualquer classe que possa visualizar a classe acessada, não pode ser herdada, apenas herdar.
 * **static:** métodos dela só pode ser usada de forma privada.
+* **final:** utilize-a para especificar o fato de que uma variável não é modificável (ou seja, é uma constante) e que qualquer tentativa de modificá-la é um erro.
 * **default:** podem ser acessados por classes pertencentes ao mesmo pacote.
 
 ### **SOBRECARGA**
