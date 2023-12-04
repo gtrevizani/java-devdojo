@@ -472,3 +472,24 @@ O objetivo do método `toString()` é trazer uma representação textual de uma 
         return "Anime: " + this.nome;
     }
 ```
+
+### **ENUMERAÇÃO**
+O tipo Enum básico que define um conjunto de constantes representadas como identificadores únicos. Um tipo `enum` é declarado com uma declaração enum, uma lista separada por vírgulas de constantes enum - a declaração pode opcionalmente incluir outros componentes das classes tradicionais como construtores, campos e métodos. Cada declaração enum declara uma classe enum com as seguintes restrições:
+
+1. Constantes enum são *implicitamente* final;
+2. Constantes enum são *implicitameante* static;
+3. Qualquer tentativa de criar um objeto de um tipo enum com um operador new resulta em um erro de compilação.
+
+As constantes enum podem ser utilizadas em qualquer lugar em que constantes podem ser utilizadas.
+
+```java
+
+public enum TipoPagamento{
+    DEBITO, 
+    CREDITO;
+
+    public double calcularDesconto(double valor){
+        return 0;
+    }
+}
+```
