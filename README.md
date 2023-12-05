@@ -493,3 +493,32 @@ public enum TipoPagamento{
     }
 }
 ```
+
+### **CLASSES ABSTRATAS**
+Com classes abstratas você nunca pretende criar objetos, elas são utilizadas como superclasses em hierarquias de heranças. 
+Essas classes não podem ser utilizadas para instanciar objetos.
+
+```java
+public abstract class Funcionario {
+    protected String nome;
+    protected double salario;
+
+    public Funcionario(String nome, double salario) {
+        this.nome = nome;
+        this.salario = salario;
+    }
+}
+```
+
+Em suma, o propósito de uma classe abstrata é fornecer uma superclasse apropriada a partir da qual outras classes podem herdar e assim compartilhar um design comum.
+
+### **MÉTODOS ABSTRATOS**
+
+Um método abstrato é um método de instância com a palavra-chave *abstract* na sua declaração.
+
+```java
+public abstract void draw();
+```
+
+Métodos abstratos não fornecem implementações. Os métodos *abstract* devem ser sobrescritos para que possam processar objetos com base em seus tipos.
+
