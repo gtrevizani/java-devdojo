@@ -522,3 +522,41 @@ public abstract void draw();
 
 Métodos abstratos não fornecem implementações. Os métodos *abstract* devem ser sobrescritos para que possam processar objetos com base em seus tipos.
 
+### **INTERFACES**
+
+São coleções de métodos relacionados que normalmente permitem informar aos objetos o que fazer, mas não como fazer.
+
+Por exemplo, os controles em um rádio servem como uma interface entre os usuários do rádio e os componentes internos do rádio. Os controles permitem que os usuários realizem somente uma série limitada de operações (por exemplo, mudar de estação, ajustar o volume, escolher entre AM e FM) e diferentes rádios podem implementar os controles de diferentes maneiras (por exemplo, uso de botões, sintonizadores, comandos de voz). A interface especifica quais operações um rádio deve permitir que os usuários realizem, mas não especifica como essas operações são realizadas.
+
+```java
+public interface DataLoader{
+    public abstract void load();
+}
+```
+
+Interfaces definem e padronizam como coisas, pessoas e sistemas podem interagir entre si.
+
+Para utilizar uma interface, uma classe concreta deve especificar que ela **implementa** a interface e declarar cada método na interface com a assinatura especificada na declaração de interface.
+
+
+```java
+public class DatabaseLoader implements DataLoader{
+    public abstract void load(){
+        System.out.println("Loading...");
+    }
+}
+```
+
+No Java SE 8, interfaces também podem conter *métodos default public*, se uma classe implementar uma interface desse tipo, a classe também recebe as implementações *default* da interface (se houver alguma). Ela não precisa sobrescrever os métodos default da interface, mas pode fazer isso se necessário.
+
+```java
+public interface DataLoader {
+    public abstract void load();
+
+    default void checkPermission(){
+        System.out.println("Fazendo checagem de permissões...");
+    }
+}
+```
+
+
