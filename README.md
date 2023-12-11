@@ -559,4 +559,8 @@ public interface DataLoader {
 }
 ```
 
+### **POLIMORFISMO**
+
+O polimorfismo permite "programar no geral" em vez de "programar no específico". Em particular, o polimorfismo permite escrever programas que processam objetos que compartilham a mesma superclasse, direta ou indiretamente, como se todos fossem objetos da superclasse, isso pode simplificar a programação.
+
 
