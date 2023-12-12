@@ -4,7 +4,6 @@ import br.com.start._02_javacore._015_polimorfismo.repository.Repository;
 import br.com.start._02_javacore._015_polimorfismo.services.RepositoryMemory;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class RepositorioTeste {
