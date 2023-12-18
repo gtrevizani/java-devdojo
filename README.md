@@ -590,7 +590,7 @@ public class Program extends TestData{
 Uma exceção é uma indicação de um problema que ocorre durante a execução de um programa. 
 
 <div align="center">
-  <img width="500" title="tipos-de-dados" src="https://javatrainingschool.com/wp-content/uploads/2021/11/image-1-1024x557.png"/>
+  <img width="600" title="tipos-de-dados" src="https://javatrainingschool.com/wp-content/uploads/2021/11/image-1-1024x557.png"/>
 </div>
 
 O tratamento de exceção permite criar aplicativos que podem resolver (ou tratar) exceções. Em muitos casos, o tratamento de uma exceção permite que um programa continue executando como se nenhum problema tivesse sido encontrado. As características apresentadas neste capítulo ajudam a escrever programas robustos e tolerantes a falhas que podem lidar com os problemas e continuar a executar ou encerrar elegantemente.
