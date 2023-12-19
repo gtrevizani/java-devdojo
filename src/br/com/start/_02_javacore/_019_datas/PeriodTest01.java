@@ -1,4 +1,4 @@
-package br.com.start._02_javacore._019_localdate;
+package br.com.start._02_javacore._019_datas;
 
 import java.time.LocalDate;
 import java.time.Period;
