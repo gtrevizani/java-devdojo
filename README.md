@@ -39,9 +39,8 @@ Os tipos primitivos existentes são:
   <img width="600" title="tipos-de-dados" src="https://techandetcblog.files.wordpress.com/2011/02/primitivos-java.png"/>
 </div>
 
-<hr>
 
-# **CASTING**
+### **CASTING**
 
 Casting é a conversão de objetos ou tipos primitivos de um tipo para outro tipo. Ao se tratar casting, considera-se a necessidade de conversão explícita entre tipos - o que, potencialmente, pode causar perdas de informação.
 
@@ -615,3 +614,22 @@ public class ExceptionTest01 {
     }
 }
 ```
+
+### **CLASSES UTILITÁRIAS**
+a
+aa
+
+### **LOCALDATE**
+aaa
+a
+
+### **COLEÇÕES**
+A Java API fornece várias estruturas de dados predefinidas, chamadas **coleções**, usadas para armazenar grupos de objetos relacionados na memória. Essas classes fornecem métodos eficientes que organizam, armazenam e recuperam seus dados sem a necessidade de conhecer como os dados são armazenados. Isso reduz o tempo de desenvolvimento de aplicativos.
+
+<div align="center">
+  <img width="600" title="tipos-de-dados" src="https://lh3.googleusercontent.com/go5HHj8ARulogiaCY3qYerASYBTB8fWGWFPf0YyFIy0dq_fJtc3HNsDnTcu_196F91xFVXKwfNxrlJ5EUwMHShZ3ml6fXfdSUVNsc61_aEd_wKQ2PvmvJ0Y5pRcAciAiUTjNniMGSw=w2400"/>
+</div>
+
+Alguns exemplos de coleções são suas músicas preferidas armazenadas no smartphone ou media player, sua lista de contatos, as cartas que você mantém em um jogo de cartas, os membros do seu time favorito e os cursos que você faz simultaneamente na escola.
+
+### **JDBC**
