@@ -615,14 +615,6 @@ public class ExceptionTest01 {
 }
 ```
 
-### **CLASSES UTILITÁRIAS**
-a
-aa
-
-### **LOCALDATE**
-aaa
-a
-
 ### **COLEÇÕES**
 A Java API fornece várias estruturas de dados predefinidas, chamadas **coleções**, usadas para armazenar grupos de objetos relacionados na memória. Essas classes fornecem métodos eficientes que organizam, armazenam e recuperam seus dados sem a necessidade de conhecer como os dados são armazenados. Isso reduz o tempo de desenvolvimento de aplicativos.
 
@@ -631,5 +623,3 @@ A Java API fornece várias estruturas de dados predefinidas, chamadas **coleçõ
 </div>
 
 Alguns exemplos de coleções são suas músicas preferidas armazenadas no smartphone ou media player, sua lista de contatos, as cartas que você mantém em um jogo de cartas, os membros do seu time favorito e os cursos que você faz simultaneamente na escola.
-
-### **JDBC**
